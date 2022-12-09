@@ -1,17 +1,17 @@
-<link href="https://fonts.cdnfonts.com/css/lulo-clean" rel="stylesheet" />
-<link href="https://fonts.cdnfonts.com/css/palmtick" rel="stylesheet" />
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/lulo-clean" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/palmtick" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="work.css" />
+    <link rel="stylesheet" href="contact.css" />
     <title>rosiestrose</title>
   </head>
   <!-- Page Content -->
@@ -25,12 +25,54 @@
       />
       <nav>
         <ul class="nav__links">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#work" class="nav-link">Work</a></li>
-          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="work.html" class="nav-link">Work</a></li>
+          <li><a href="resume.html" class="nav-link">Resume</a></li>
         </ul>
       </nav>
-      <a class="cta" href="#"><button>Contact</button></a>
+      <a class="cta" href="contact.html"><button>Contact</button></a>
     </header>
+    <div class="container">
+      <!-- Contact Section -->
+      <div class="title">
+        <div class="heading"><h1>CONTACT ME</h1></div>
+        <h2>Lets get in touch. Send me a message:</h2>
+      </div>
+      <div class="contact">
+        <div class="row">
+          <form action="#">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your email.."
+            />
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 170px"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

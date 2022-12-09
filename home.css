@@ -6,6 +6,7 @@ header {
   align-items: center;
   padding: 30px;
   background-color: white;
+  z-index: 10;
 }
 .logoo {
   cursor: pointer;
@@ -168,6 +169,10 @@ button:hover {
   grid-template-columns: calc(66% - 5px) calc(34% - 5px);
   grid-template-rows: calc(50% - 5px) calc(50% - 5px);
   grid-gap: 10px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
 }
 
 .grid .left {
@@ -176,7 +181,7 @@ button:hover {
   padding-top: 75px;
 }
 
-.grid .upper_right {
+.grid .upperright {
   grid-column: 2 / 2;
   grid-row: 1 / 2;
 }
@@ -186,12 +191,6 @@ button:hover {
   grid-row: 2 / 2;
   padding-right: 30px;
   padding-top: 10px;
-}
-.grid {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 10px;
 }
 view {
   padding: 9px 25px;
@@ -232,6 +231,23 @@ view:hover {
   padding: 10px;
   padding-bottom: 10%;
 }
+.footer .title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  padding-bottom: 5vh;
+}
+.footer .subheader {
+  font-size: larger;
+  padding-bottom: 2rem;
+}
+.footer .content {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+}
+.footer .email {
+  padding-top: 2vh;
+}
 .social-media-icons {
   padding: 2vh;
   display: flex;
@@ -253,26 +269,9 @@ view:hover {
   display: block;
   padding-left: 10%;
   padding-right: 30%;
-  padding-top: 6rem;
+  padding-top: 5rem;
   padding-bottom: 10vh;
   background-color: rgb(245, 245, 245);
-  line-height: 3em;
-  font-size: larger;
-}
-.footer .title {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-weight: lighter;
-  padding-bottom: 5vh;
-}
-.footer .subheader {
-  font-size: larger;
-  padding-bottom: 2rem;
-}
-.footer .content {
-  font-family: "Montserrat", sans-serif;
-  font-weight: lighter;
-}
-.footer .email {
-  padding-top: 2vh;
+  line-height: 2.5em;
+  font-size: 100%;
 }

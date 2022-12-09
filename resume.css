@@ -46,8 +46,62 @@ button:hover {
   background-color: rgb(120, 120, 120);
 }
 .title .resume {
+  padding-top: 2rem;
   font-size: 500%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   letter-spacing: 1px;
   text-shadow: 4px 4px #ffc3e2;
+  text-align: center;
+}
+.download {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.resume-img {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.social-media-icons {
+  padding: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #353535;
+}
+.fa {
+  padding-left: 5vh;
+  padding-right: 5vh;
+  font-size: 1.75rem;
+  color: white;
+}
+.fa:hover {
+  color: black;
+  transition: color 0.3s ease-in;
+}
+.footer {
+  display: block;
+  padding-left: 10%;
+  padding-right: 30%;
+  padding-top: 5rem;
+  padding-bottom: 10vh;
+  background-color: rgb(245, 245, 245);
+  line-height: 2.5em;
+  font-size: 100%;
+}
+.footer .heading {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  padding-bottom: 5vh;
+}
+.footer .subheader {
+  font-size: larger;
+  padding-bottom: 2rem;
+}
+.footer .content {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+}
+.footer .email {
+  padding-top: 2vh;
 }
