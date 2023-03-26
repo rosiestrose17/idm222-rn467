@@ -62,7 +62,7 @@ header {
   }
 
   to {
-    opacity: 0.98;
+    opacity: 1;
   }
 }
 
@@ -114,14 +114,6 @@ header {
   padding-top: 1.5rem;
   background-color: rgb(0, 0, 0);
   animation: fadeIn 2s;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.98;
-  }
 }
 .title .work {
   font-size: 5rem;
@@ -230,22 +222,6 @@ header {
     font-size: 1.5vw;
   }
 }
-@keyframes bounceIn {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
 @media (max-width: 480px) {
   header {
     display: none;
