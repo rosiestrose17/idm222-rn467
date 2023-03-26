@@ -61,16 +61,6 @@ header {
   animation: fadeIn 2s;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 0.98;
-  }
-}
-
 .nav_links a {
   color: black;
   font-size: 1.25rem;
