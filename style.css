@@ -347,7 +347,7 @@ a.cta:hover {
   background-color: rgb(255, 255, 255);
   animation-name: LefttoRight;
   animation-duration: 2.5s;
-  animation-delay: 5s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
   padding-bottom: 5vh;
