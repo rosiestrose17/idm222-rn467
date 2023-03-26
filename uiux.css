@@ -1,59 +1,217 @@
-header {
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 33px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 5px 10px 18px #f8f8f8;
-}
-.logoo {
-  cursor: pointer;
-}
-.nav__links {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
   list-style: none;
-  justify-content: center;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: larger;
+  text-decoration-line: none;
 }
-.nav__links li {
-  display: inline-block;
-  padding-left: 3rem;
+#overview {
+  padding-top: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.836);
+  animation: fadeIn 2s;
 }
-.nav__links li a {
+html {
+  font-size: calc(60% + 0.8vmin);
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --main-color: white;
+  --text-color: rgb(44, 37, 37);
+  --big-font: 5rem;
+  --h2-font: 2.25rem;
+  --p-font: 1rem;
+}
+
+*::selection {
+  background: var (--main-color);
+}
+
+.logo {
+  width: 4.5rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 75px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  background-color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-shadow: 10px 5px 5px #ffe4f1;
+}
+
+.mobile-header {
+  display: none;
+}
+
+.nav_links {
+  display: flex;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.98;
+  }
+}
+
+.nav_links a {
+  color: black;
+  font-size: 1.25rem;
+  padding: 10px 40px;
+}
+
+.nav_links a:hover {
+  color: rgb(242, 150, 183);
   transition: all 0.3s ease;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
 }
-.nav__links li a:hover {
-  color: pink;
-}
-button {
-  padding: 9px 25px;
-  background-color: rgb(0, 0, 0);
-  color: white;
-  border: none;
-  border-radius: 50px;
+
+#icon {
+  font-size: 2rem;
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 0, 0);
+  display: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 10px px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    font-size: 3vh;
+    line-height: 2rem;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .title .work {
+    font-size: 6vh;
+  }
+  h2 {
+    font-size: 2rem;
+    padding: 1rem 4rem;
+  }
+}
+.footer .title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  padding-bottom: 5vh;
+}
+
+.footer .subheader {
   font-size: larger;
+  padding-bottom: 2rem;
 }
-button:hover {
-  background-color: rgb(120, 120, 120);
+
+.footer .content {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
 }
+
+.footer .email {
+  padding-top: 2vh;
+}
+
+.social-media-icons {
+  padding: 2vh;
+  padding-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #353535;
+}
+
+.fa {
+  padding-left: 5vh;
+  padding-right: 5vh;
+  font-size: 1.75rem;
+  color: white;
+}
+
+.fa:hover {
+  color: black;
+  transform: scale(1.2);
+  transition: color 0.3s ease-in;
+}
+
+.email {
+  color: rgb(255, 0, 128);
+}
+.title-footer {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.footer {
+  background-color: black;
+  line-height: 2.5em;
+  font-size: 100%;
+  color: white;
+  display: block;
+  padding-left: 10%;
+  padding-right: 20%;
+  padding-top: 3rem;
+  padding-bottom: 10vh;
+  line-height: 2.5em;
+  font-size: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+.content {
+  font-size: 1.1rem;
+}
+
 .title .work {
-  font-size: 500%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   letter-spacing: 1px;
-  text-shadow: 4px 4px #c3c5ff;
+  color: rgb(255, 0, 106);
+  text-shadow: 4px 4px #000000;
 }
 .title {
   text-align: center;
-  padding-top: 5vh;
+  padding-top: 10vh;
 }
 .title .subheading {
   background-image: linear-gradient(90deg, #fbc9e0, #80b9ff);
@@ -62,7 +220,6 @@ button:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  font-size: larger;
 }
 .project-overview {
   display: flex;
@@ -81,9 +238,9 @@ button:hover {
   background-color: rgb(167, 188, 236);
   padding: 50px 40px;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-size: 130%;
-  font-weight: 50;
+  font-weight: bolder;
   line-height: 3rem;
   transition: all 0.3s ease-in-out;
 }
@@ -123,47 +280,131 @@ button:hover {
 .project-overview2 .content-box:hover {
   transform: scale(1.15);
 }
-.footer {
-  display: block;
-  padding-left: 10%;
-  padding-right: 30%;
-  padding-top: 5rem;
-  padding-bottom: 10vh;
-  background-color: rgb(245, 245, 245);
-  line-height: 2.5em;
-  font-size: 100%;
+
+@media (max-width: 480px) {
+  .title {
+    width: 100%;
+    padding-top: 0;
+  }
+  .title .work {
+    padding-bottom: 1rem;
+    font-size: 4vh;
+  }
+  .title .subheading {
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .project-overview {
+    width: 130%;
+    padding-right: 25%;
+    padding-bottom: 10%;
+    margin: 0;
+  }
+
+  .project-overview .content-box {
+    padding: 2vh;
+    font-size: 70%;
+    font-weight: bolder;
+    line-height: 2rem;
+  }
+  .project-overview2 .content-box {
+    font-size: 70%;
+    font-weight: bolder;
+    line-height: 2rem;
+    padding: 2vh;
+  }
+
+  .project-overview2 {
+    margin: 0;
+    width: 110%;
+    padding-right: 5%;
+  }
+  .project-overview .project-image {
+    width: 60%;
+  }
+  .project-overview2 .project-image {
+    width: 65%;
+  }
+  header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  .mobile-wrapper {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 30px;
+  }
+
+  .menu-icon a i {
+    color: black;
+    padding: 0;
+  }
+
+  .nav_links {
+    transition: all ease-in-out 1s;
+    height: 0;
+    display: none;
+  }
+
+  .collapsed {
+    transition: all ease-in-out 1s;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .collapsed li {
+    padding: 10px 0;
+  }
 }
-.footer .heading {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-weight: lighter;
-  padding-bottom: 5vh;
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  .project-overview {
+    width: 120%;
+    padding-right: 25%;
+    padding-bottom: 10%;
+    margin: 0;
+  }
+
+  .project-overview .content-box {
+    padding: 2vh;
+    font-size: 1.5vh;
+    font-weight: bolder;
+    line-height: 3rem;
+  }
+  .project-overview2 .content-box {
+    font-size: 1.5vh;
+    font-weight: bolder;
+    line-height: 3rem;
+    padding: 2vh;
+  }
+
+  .project-overview2 {
+    margin: 0;
+    width: 110%;
+    padding-left: 5%;
+  }
+  .project-overview .project-image {
+    width: 60%;
+  }
+  .project-overview2 .project-image {
+    width: 65%;
+  }
 }
-.footer .subheader {
-  font-size: larger;
-  padding-bottom: 2rem;
-}
-.footer .content {
-  font-family: "Montserrat", sans-serif;
-  font-weight: lighter;
-}
-.footer .email {
-  padding-top: 2vh;
-}
-.social-media-icons {
-  padding: 2vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #353535;
-}
-.fa {
-  padding-left: 5vh;
-  padding-right: 5vh;
-  font-size: 1.75rem;
-  color: white;
-}
-.fa:hover {
-  color: black;
-  transition: color 0.3s ease-in;
+@media (min-width: 768px) {
+  .title .work {
+    font-size: 7vh;
+  }
+  .title .subheading {
+    font-size: 2.5vh;
+  }
 }

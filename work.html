@@ -10,73 +10,110 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="work.css" />
     <title>rosiestrose</title>
   </head>
 
   <!-- Page Content -->
   <body>
-    <!-- Navigation Menu Bar -->
+    <!-- Navigation Menu -->
     <header>
-      <img
-        class="logoo"
-        src="/images/logo.png"
-        alt="logo"
-        style="width: 75px; height: 70px"
-      />
-      <nav>
-        <ul class="nav__links">
-          <li><a href="home.html" class="nav-link">Home</a></li>
-          <li><a href="work.html" class="nav-link">Work</a></li>
-          <li><a href="resume.html" class="nav-link">Resume</a></li>
-        </ul>
-      </nav>
-      <a class="cta" href="contact.html"><button>Contact</button></a>
-    </header>
-
-    <!-- 3 Work Categories -->
-    <div class="title">
-      <h1 class="work">MY WORK</h1>
-      <div class="subheading">
-        <h2>designer. storyteller. collaborator.</h2>
-      </div>
-    </div>
-    <br />
-    <br />
-    <!-- Container boxes with Image and Descriptionn side by side  -->
-    <div class="work-category">
-      <div class="box-container">
-        <a class="projects-link" href="uiux.html">
-          <img src="/images/usthebasic.png" width="45%" />
-          <div class="textbox"><h2>UI UX DESIGN</h2></div>
+      <img class="logo" src="/images/logo.png" alt="active" />
+      <div class="menu-icon" id="icon">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
         </a>
       </div>
-    </div>
-    <div class="work-category">
-      <div class="box-container">
-        <a class="projects-link" href="digital.html">
-          <img src="/images/magoa.png" width="45%" />
-          <div class="textbox">
-            <h2>DIGITAL ART & DESIGN</h2>
+      <ul class="nav_links">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li class="dropdown">
+          <span>
+            <a href="work.html" class="nav-link">Work</a>
+          </span>
+          <div class="dropdown-content">
+            <ul class="work-types">
+              <li><a href="uiux.html">UI UX Design</a></li>
+              <li><a href="digital.html">Digital Art & Design</a></li>
+              <li><a href="traditional.html">Traditional Art</a></li>
+            </ul>
           </div>
-        </a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-link" id="navlink2">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <br />
+    <div class="mobile-header">
+      <div class="mobile-wrapper">
+        <img class="logo" src="/images/logo.png" alt="active" />
+        <div class="menu-icon" id="icon">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="work-category">
-      <div class="box-container">
-        <a class="projects-link" href="traditional.html">
-          <img src="/images/whale.png" width="45%" />
-          <div class="textbox"><h2>TRADITIONAL ART</h2></div>
-        </a>
-      </div>
+      <ul class="nav_links" id="topMenu">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li class="dropdown">
+          <span>
+            <a href="work.html" class="nav-link">Work</a>
+          </span>
+          <div class="dropdown-content">
+            <ul class="work-types">
+              <li><a href="uiux.html">UI UX Design</a></li>
+              <li><a href="digital.html">Digital Art & Design</a></li>
+              <li><a href="traditional.html">Traditional Art</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-link" id="navlink2">Contact</a>
+        </li>
+      </ul>
     </div>
     <br />
-    <br />
-
-    <!-- Footer  -->
+    <section class="work" id="work-display">
+      <div class="title">
+        <h1 class="work">MY WORK</h1>
+        <div class="subheading">
+          <h2>designer. storyteller. collaborator.</h2>
+        </div>
+      </div>
+      <br />
+      <br />
+      <!-- Container boxes with Image and Descriptionn side by side  -->
+      <div class="work-category">
+        <div class="box-container">
+          <a class="projects-link" href="uiux.html">
+            <img src="/images/usthebasic.png" width="45%" />
+            <div class="textbox"><h2>UI UX DESIGN</h2></div>
+          </a>
+        </div>
+      </div>
+      <div class="work-category">
+        <div class="box-container">
+          <a class="projects-link" href="digital.html">
+            <img src="/images/magoa.png" width="45%" />
+            <div class="textbox">
+              <h2>DIGITAL ART & DESIGN</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-category">
+        <div class="box-container">
+          <a class="projects-link" href="traditional.html">
+            <img src="/images/whale.png" width="45%" />
+            <div class="textbox"><h2>FOLK ARTS & CRAFTS</h2></div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer with Biography & Social Links -->
     <div class="footer">
-      <div class="heading">
+      <div class="title-footer">
+        <br />
         <h1 style="color: rgb(154, 154, 154)">— ABOUT ME</h1>
       </div>
       <div class="subheader">
@@ -95,21 +132,32 @@
           appealing but can change someone's life for the better.
         </p>
       </div>
+      <br />
       <div class="email">
         <h1>Let's get in touch!</h1>
         <h1><i>rn467@drexel.edu</i></h1>
       </div>
     </div>
-
-    <!-- Social Media Links  -->
     <div class="social-media-icons">
-      <a href="#" class="social-button"
-        ><i class="fa fa-facebook-official"></i
-      ></a>
-      <a href="#" class="social-button"><i class="fa fa-instagram"></i></a>
-      <a href="#" class="social-button"><i class="fa fa-flickr"></i></a>
-      <a href="#" class="social-button"><i class="fa fa-twitter"></i></a>
-      <a href="#" class="social-button"><i class="fa fa-linkedin"></i></a>
+      <a
+        href="https://www.facebook.com/profile.php?id=100010070889280&mibextid=LQQJ4d"
+        class="social-button"
+      >
+        <i class="fa fa-facebook-official"></i>
+      </a>
+      <a href="https://www.instagram.com/_rosiestrose/" class="social-button">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="https://www.flickr.com/" class="social-button">
+        <i class="fa fa-flickr"></i>
+      </a>
+      <a href="https://twitter.com/?lang=vi" class="social-button">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/feed/" class="social-button">
+        <i class="fa fa-linkedin"></i>
+      </a>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>

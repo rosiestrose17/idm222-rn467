@@ -7,197 +7,244 @@
     <link href="https://fonts.cdnfonts.com/css/lulo-clean" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/palmtick" rel="stylesheet" />
     <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="digital.css" />
     <title>rosiestrose</title>
   </head>
+
   <!-- Page Content -->
   <body>
+    <!-- Navigation Menu -->
     <header>
-      <img
-        class="logoo"
-        src="/images/logo.png"
-        alt="logo"
-        style="width: 75px; height: 70px"
-      />
-      <nav>
-        <ul class="nav__links">
-          <li><a href="home.html" class="nav-link">Home</a></li>
-          <li><a href="work.html" class="nav-link">Work</a></li>
-          <li><a href="resume.html" class="nav-link">Resume</a></li>
-        </ul>
-      </nav>
-      <a class="cta" href="contact.html"><button>Contact</button></a>
+      <img class="logo" src="/images/logo.png" alt="active" />
+      <div class="menu-icon" id="icon">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <ul class="nav_links">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li class="dropdown">
+          <span>
+            <a href="work.html" class="nav-link">Work</a>
+          </span>
+          <div class="dropdown-content">
+            <ul class="work-types">
+              <li><a href="uiux.html">UI UX Design</a></li>
+              <li><a href="digital.html">Digital Art & Design</a></li>
+              <li><a href="traditional.html">Traditional Art</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-link" id="navlink2">Contact</a>
+        </li>
+      </ul>
     </header>
     <br />
-    <div class="title">
-      <h1 class="work">DIGITAL ART</h1>
-    </div>
-    <br />
-    <div class="digital-category">
-      <h1>Painting & Illustrations</h1>
-    </div>
-    <!-- Grid for 6 photos -->
-    <div class="gallery-container">
-      <div class="gallery">
-        <figure class="gallery__item gallery__item--1">
-          <img
-            src="images/grid1.png"
-            alt="Gallery image 1"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--2">
-          <img
-            src="images/grid2.png"
-            alt="Gallery image 2"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--3">
-          <img
-            src="images/grid3.jpg"
-            alt="Gallery image 3"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--4">
-          <img
-            src="images/grid4.jpg"
-            alt="Gallery image 4"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--5">
-          <img
-            src="images/grid5.png"
-            alt="Gallery image 5"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--6">
-          <img
-            src="images/grid6.png"
-            alt="Gallery image 6"
-            class="gallery__img"
-          />
-        </figure>
+    <div class="mobile-header">
+      <div class="mobile-wrapper">
+        <img class="logo" src="/images/logo.png" alt="active" />
+        <div class="menu-icon" id="icon">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
       </div>
+      <ul class="nav_links" id="topMenu">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li class="dropdown">
+          <span>
+            <a href="work.html" class="nav-link">Work</a>
+          </span>
+          <div class="dropdown-content">
+            <ul class="work-types">
+              <li><a href="uiux.html">UI UX Design</a></li>
+              <li><a href="digital.html">Digital Art & Design</a></li>
+              <li><a href="traditional.html">Traditional Art</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-link" id="navlink2">Contact</a>
+        </li>
+      </ul>
     </div>
     <br />
-    <br />
-    <div class="digital-category">
-      <h1>Design</h1>
-    </div>
-    <!-- Grid for 6 photos -->
-    <div class="gallery-container">
-      <div class="gallery2">
-        <figure class="gallery__item gallery__item--7">
-          <img
-            src="images/grid7.jpg"
-            alt="Gallery image 7"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--8">
-          <img
-            src="images/grid8.jpg"
-            alt="Gallery image 8"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--9">
-          <img
-            src="images/grid9.jpg"
-            alt="Gallery image 9"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--10">
-          <img
-            src="images/grid12.png"
-            alt="Gallery image 10"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--11">
-          <img
-            src="images/grid10.jpg"
-            alt="Gallery image 11"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--12">
-          <img
-            src="images/grid11.jpg"
-            alt="Gallery image 12"
-            class="gallery__img"
-          />
-        </figure>
+    <!-- Art display in gallery -->
+    <section class="digital-work">
+      <div class="title" id="title-work">
+        <h1 class="work">DIGITAL ART</h1>
       </div>
-    </div>
-    <br />
-    <br />
-    <!-- 3x3 Grid for 9 photos -->
-    <div class="digital-category">
-      <h1>Photography</h1>
-    </div>
-    <br />
-    <div class="phto-gallery">
-      <img
-        src="images/grid13.jpg"
-        alt="Gallery image 13"
-        class="gallery__img"
-      />
-      <img
-        src="images/grid14.png"
-        alt="Gallery image 14"
-        class="gallery__img"
-      />
-      <img
-        src="images/grid15.png"
-        alt="Gallery image 15"
-        class="gallery__img"
-      />
-      <img
-        src="images/grid18.png"
-        alt="Gallery image 16"
-        class="gallery__img"
-      />
-      <img
-        src="images/grid17.jpg"
-        alt="Gallery image 17"
-        class="gallery__img"
-      />
-      <img
-        src="images/grid16.png"
-        alt="Gallery image 18"
-        class="gallery__img"
-      />
-      <img
-        src="images/grid19.png"
-        alt="Gallery image 19"
-        class="gallery__img"
-      />
-      <img
-        src="images/grid20.png"
-        alt="Gallery image 20"
-        class="gallery__img"
-      />
-      <img
-        src="images/grid21.png"
-        alt="Gallery image 21"
-        class="gallery__img"
-      />
-    </div>
-    <br />
-    <br />
+      <br />
+      <div class="digital-category">
+        <h1>Painting & Illustrations</h1>
+      </div>
+      <!-- Grid for 6 photos -->
+      <div class="gallery-container">
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--1">
+            <img
+              src="images/grid1.png"
+              alt="Gallery image 1"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--2">
+            <img
+              src="images/grid2.png"
+              alt="Gallery image 2"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+            <img
+              src="images/grid3.jpg"
+              alt="Gallery image 3"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+            <img
+              src="images/grid4.jpg"
+              alt="Gallery image 4"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--5">
+            <img
+              src="images/grid5.png"
+              alt="Gallery image 5"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--6">
+            <img
+              src="images/grid6.png"
+              alt="Gallery image 6"
+              class="gallery__img"
+            />
+          </figure>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="digital-category">
+        <h1>Design</h1>
+      </div>
+      <!-- Grid for 6 photos -->
+      <div class="gallery-container">
+        <div class="gallery2">
+          <figure class="gallery__item gallery__item--7">
+            <img
+              src="images/grid7.jpg"
+              alt="Gallery image 7"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--8">
+            <img
+              src="images/grid8.jpg"
+              alt="Gallery image 8"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--9">
+            <img
+              src="images/grid9.jpg"
+              alt="Gallery image 9"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--10">
+            <img
+              src="images/grid12.png"
+              alt="Gallery image 10"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img
+              src="images/grid10.jpg"
+              alt="Gallery image 11"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--12">
+            <img
+              src="images/grid11.jpg"
+              alt="Gallery image 12"
+              class="gallery__img"
+            />
+          </figure>
+        </div>
+      </div>
+      <br />
+      <br />
+      <!-- 3x3 Grid for 9 photos -->
+      <div class="digital-category">
+        <h1 id="photography-gallery">Photography</h1>
+        <br />
+      </div>
+      <div class="phto-gallery" id="gallery3">
+        <img
+          src="images/grid13.jpg"
+          alt="Gallery image 13"
+          class="gallery__img"
+        />
+        <img
+          src="images/grid14.png"
+          alt="Gallery image 14"
+          class="gallery__img"
+        />
+        <img
+          src="images/grid15.png"
+          alt="Gallery image 15"
+          class="gallery__img"
+        />
+        <img
+          src="images/grid18.png"
+          alt="Gallery image 16"
+          class="gallery__img"
+        />
+        <img
+          src="images/grid17.jpg"
+          alt="Gallery image 17"
+          class="gallery__img"
+        />
+        <img
+          src="images/grid16.png"
+          alt="Gallery image 18"
+          class="gallery__img"
+        />
+        <img
+          src="images/grid19.png"
+          alt="Gallery image 19"
+          class="gallery__img"
+        />
+        <img
+          src="images/grid20.png"
+          alt="Gallery image 20"
+          class="gallery__img"
+        />
+        <img
+          src="images/grid21.png"
+          alt="Gallery image 21"
+          class="gallery__img"
+        />
+      </div>
+      <br />
+    </section>
     <!-- Footer with Biography & Social Links -->
     <div class="footer">
-      <div class="heading">
+      <div class="title-footer">
+        <br />
         <h1 style="color: rgb(154, 154, 154)">— ABOUT ME</h1>
       </div>
       <div class="subheader">
@@ -216,19 +263,32 @@
           appealing but can change someone's life for the better.
         </p>
       </div>
+      <br />
       <div class="email">
         <h1>Let's get in touch!</h1>
         <h1><i>rn467@drexel.edu</i></h1>
       </div>
     </div>
     <div class="social-media-icons">
-      <a href="#" class="social-button"
-        ><i class="fa fa-facebook-official"></i
-      ></a>
-      <a href="#" class="social-button"><i class="fa fa-instagram"></i></a>
-      <a href="#" class="social-button"><i class="fa fa-flickr"></i></a>
-      <a href="#" class="social-button"><i class="fa fa-twitter"></i></a>
-      <a href="#" class="social-button"><i class="fa fa-linkedin"></i></a>
+      <a
+        href="https://www.facebook.com/profile.php?id=100010070889280&mibextid=LQQJ4d"
+        class="social-button"
+      >
+        <i class="fa fa-facebook-official"></i>
+      </a>
+      <a href="https://www.instagram.com/_rosiestrose/" class="social-button">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="https://www.flickr.com/" class="social-button">
+        <i class="fa fa-flickr"></i>
+      </a>
+      <a href="https://twitter.com/?lang=vi" class="social-button">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/feed/" class="social-button">
+        <i class="fa fa-linkedin"></i>
+      </a>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>

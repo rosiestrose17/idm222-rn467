@@ -7,72 +7,122 @@
     <link href="https://fonts.cdnfonts.com/css/lulo-clean" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/palmtick" rel="stylesheet" />
     <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contact.css" />
     <title>rosiestrose</title>
   </head>
-  <!-- Page Content -->
+
   <body>
+    <!-- Navigation Menu -->
     <header>
-      <img
-        class="logoo"
-        src="/images/logo.png"
-        alt="logo"
-        style="width: 75px; height: 70px"
-      />
-      <nav>
-        <ul class="nav__links">
-          <li><a href="home.html" class="nav-link">Home</a></li>
-          <li><a href="work.html" class="nav-link">Work</a></li>
-          <li><a href="resume.html" class="nav-link">Resume</a></li>
-        </ul>
-      </nav>
-      <a class="cta" href="contact.html"><button>Contact</button></a>
-    </header>
-    <div class="container">
-      <!-- Contact Section -->
-      <div class="title">
-        <div class="heading"><h1>CONTACT ME</h1></div>
-        <h2>Lets get in touch. Send me a message:</h2>
+      <img class="logo" src="/images/logo.png" alt="active" />
+      <div class="menu-icon" id="icon">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-      <div class="contact">
-        <div class="row">
-          <form action="#">
-            <label for="fname">First Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name.."
-            />
-            <label for="lname">Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-            />
-            <label for="email">Email</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your email.."
-            />
-            <label for="subject">Subject</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-              style="height: 170px"
-            ></textarea>
-            <input type="submit" value="Submit" />
-          </form>
+      <ul class="nav_links">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li class="dropdown">
+          <span>
+            <a href="work.html" class="nav-link">Work</a>
+          </span>
+          <div class="dropdown-content">
+            <ul class="work-types">
+              <li><a href="uiux.html">UI UX Design</a></li>
+              <li><a href="digital.html">Digital Art & Design</a></li>
+              <li><a href="traditional.html">Traditional Art</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a href="contact.html" class="nav-link" id="navlink2">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <br />
+    <div class="mobile-header">
+      <div class="mobile-wrapper">
+        <img class="logo" src="/images/logo.png" alt="active" />
+        <div class="menu-icon" id="icon">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
       </div>
+      <ul class="nav_links" id="topMenu">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li class="dropdown">
+          <span>
+            <a href="work.html" class="nav-link">Work</a>
+          </span>
+          <div class="dropdown-content">
+            <ul class="work-types">
+              <li><a href="uiux.html">UI UX Design</a></li>
+              <li><a href="digital.html">Digital Art & Design</a></li>
+              <li><a href="traditional.html">Traditional Art</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-link" id="navlink2">Contact</a>
+        </li>
+      </ul>
     </div>
+    <br />
+    <section class="contact" id="contact">
+      <div class="container">
+        <!-- Contact Section -->
+        <div class="title">
+          <div class="heading">
+            <h1>CONTACT ME</h1>
+            <h2>Lets get in touch. Send me a message:</h2>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="row">
+            <form action="#">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your email.."
+              />
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 170px"
+              ></textarea>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./main.js"></script>
   </body>
 </html>

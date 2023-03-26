@@ -1,113 +1,164 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://fonts.cdnfonts.com/css/lulo-clean" rel="stylesheet" />
-        <link href="https://fonts.cdnfonts.com/css/palmtick" rel="stylesheet" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-    <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/lulo-clean" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/palmtick" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="uiux.css" />
     <title>rosiestrose</title>
   </head>
 
   <!-- Page Content -->
   <body>
-    <!-- Navigation Menu Bar -->
+    <!-- Navigation Menu -->
     <header>
-      <img
-        class="logoo"
-        src="/images/logo.png"
-        alt="logo"
-        style="width: 75px; height: 70px"
-      />
-      <nav>
-        <ul class="nav__links">
-          <li><a href="home.html" class="nav-link">Home</a></li>
-          <li><a href="work.html" class="nav-link">Work</a></li>
-          <li><a href="resume.html" class="nav-link">Resume</a></li>
-        </ul>
-      </nav>
-      <a class="cta" href="contact.html"><button>Contact</button></a>
+      <img class="logo" src="/images/logo.png" alt="active" />
+      <div class="menu-icon" id="icon">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <ul class="nav_links">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li class="dropdown">
+          <span>
+            <a href="work.html" class="nav-link">Work</a>
+          </span>
+          <div class="dropdown-content">
+            <ul class="work-types">
+              <li><a href="uiux.html">UI UX Design</a></li>
+              <li><a href="digital.html">Digital Art & Design</a></li>
+              <li><a href="traditional.html">Traditional Art</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-link" id="navlink2">Contact</a>
+        </li>
+      </ul>
     </header>
-    <div class="title">
-        <h1 class="work">UI UX DESIGN </h1>
-        <div class="subheading">
-          <h2> e-commerce website, music streaming app, business website, game
-            and product design</h2>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <!--Projects Overview-->
-    <div>
-      <div class="project-overview">
-        <img class="project-image" src="images/Daystream.png" />
-        <div class="content-box"> <!--Expand when hover -->
-          <h3>
-            How does a music streaming app based on social media platforms look
-            like?
-          </h3>
-          <br>
-          <a  href ="https://www.figma.com/file/9DPgadNaCYuphmmuuP60aD/IDM-213-002-rn467_02_App_Redesign?node-id=402%3A1338&t=C3dKGU1YYWUmuv9V-1" class="project-nav-link">VIEW FULL PROJECT</a></li>
+    <br />
+    <div class="mobile-header">
+      <div class="mobile-wrapper">
+        <img class="logo" src="/images/logo.png" alt="active" />
+        <div class="menu-icon" id="icon">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
       </div>
+      <ul class="nav_links" id="topMenu">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li class="dropdown">
+          <span>
+            <a href="work.html" class="nav-link">Work</a>
+          </span>
+          <div class="dropdown-content">
+            <ul class="work-types">
+                <li><a href="uiux.html">UI UX Design</a></li>
+                <li><a href="digital.html">Digital Art & Design</a></li>
+                <li><a href="traditional.html">Traditional Art</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-link" id="navlink2">Contact</a>
+        </li>
+      </ul>
     </div>
-    <div>
-        <div class="project-overview2">
-            <div class="content-box">
+    <br />
+        <!--Projects Overview-->
+        <section id="overview" class="overview">
+        <div class="title">
+            <h1 class="work">UI UX DESIGN </h1>
+            <div class="subheading">
+              <h2> e-commerce website, music streaming app, business website, game
+                and product design</h2>
+            </div>
+        </div>
+        <br>
+            <div class="project-overview">
+              <img class="project-image" src="images/Daystream.png" />
+              <div class="content-box"> <!--Expand when hover -->
                 <h3>
-                    Making digital shopping more aesthetic and interactive for users!
+                  How does a music streaming app based on social media platforms look
+                  like?
                 </h3>
                 <br>
-                <a  href ="https://www.figma.com/file/YmNHNUHClEEzRd7lQJvFU2/IDM-211-002-467-final?node-id=0%3A1&t=C3dKGU1YYWUmuv9V-3" class="project-nav-link">VIEW FULL PROJECT</a></li>
+                <a  href ="https://www.figma.com/file/9DPgadNaCYuphmmuuP60aD/IDM-213-002-rn467_02_App_Redesign?node-id=402%3A1338&t=C3dKGU1YYWUmuv9V-1" class="project-nav-link">VIEW FULL PROJECT</a></li>
               </div>
-          <img class="project-image" src="images/usthebasic2.png" />
-        </div>
+            </div>
+          </div>
+          <div>
+              <div class="project-overview2">
+                  <div class="content-box">
+                      <h3>
+                          Making digital shopping more aesthetic and interactive for users!
+                      </h3>
+                      <br>
+                      <a  href ="https://www.figma.com/file/YmNHNUHClEEzRd7lQJvFU2/IDM-211-002-467-final?node-id=0%3A1&t=C3dKGU1YYWUmuv9V-3" class="project-nav-link">VIEW FULL PROJECT</a></li>
+                    </div>
+                <img class="project-image" src="images/usthebasic2.png" />
+              </div>
+            </div>
+            <br>
+            <br>
+        </section>
+    <!-- Footer with Biography & Social Links -->
+    <div class="footer">
+      <div class="title-footer">
+        <br />
+        <h1 style="color: rgb(154, 154, 154)">— ABOUT ME</h1>
       </div>
-      <br>
-      <br>
-
-      <!-- Footer with Biography & Social Links -->
-      <div class="footer">
-        <div class="heading">
-          <h1 style="color: rgb(154, 154, 154)">— ABOUT ME</h1>
-        </div>
-        <div class="subheader">
-          <h2>Originally from Ho Chi Minh City, Vietnam.</h2>
-          <h2>Currently in Philadelphia, PA.</h2>
-        </div>
-        <div class="content">
-          <p>
-            Hey there! My name is Ha My (Rosie) Nguyen, majoring in User
-            Experience and Interaction Design at Drexel University. I have had a
-            great passion for art and design since I was a child. As I grew older,
-            I experimented with a variety of art mediums, including watercolor,
-            color pencil, digital art, paper-cutting, embroidery, oil paint, and
-            acrylic. As time passed, my passion emerged from simply painting and
-            drawing to design, especially designs that are not only visually
-            appealing but can change someone's life for the better.
-          </p>
-        </div>
-        <div class="email">
-          <h1>Let's get in touch!</h1>
-          <h1><i>rn467@drexel.edu</i></h1>
-        </div>
+      <div class="subheader">
+        <h2>Originally from Ho Chi Minh City, Vietnam.</h2>
+        <h2>Currently in Philadelphia, PA.</h2>
       </div>
-      <div class="social-media-icons">
-        <a href="#" class="social-button"
-          ><i class="fa fa-facebook-official"></i
-        ></a>
-        <a href="#" class="social-button"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="social-button"><i class="fa fa-flickr"></i></a>
-        <a href="#" class="social-button"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="social-button"><i class="fa fa-linkedin"></i></a>
+      <div class="content">
+        <p>
+          Hey there! My name is Ha My (Rosie) Nguyen, majoring in User
+          Experience and Interaction Design at Drexel University. I have had a
+          great passion for art and design since I was a child. As I grew older,
+          I experimented with a variety of art mediums, including watercolor,
+          color pencil, digital art, paper-cutting, embroidery, oil paint, and
+          acrylic. As time passed, my passion emerged from simply painting and
+          drawing to design, especially designs that are not only visually
+          appealing but can change someone's life for the better.
+        </p>
       </div>
+      <br />
+      <div class="email">
+        <h1>Let's get in touch!</h1>
+        <h1><i>rn467@drexel.edu</i></h1>
+      </div>
+    </div>
+    <div class="social-media-icons">
+      <a
+        href="https://www.facebook.com/profile.php?id=100010070889280&mibextid=LQQJ4d"
+        class="social-button"
+      >
+        <i class="fa fa-facebook-official"></i>
+      </a>
+      <a href="https://www.instagram.com/_rosiestrose/" class="social-button">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="https://www.flickr.com/" class="social-button">
+        <i class="fa fa-flickr"></i>
+      </a>
+      <a href="https://twitter.com/?lang=vi" class="social-button">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/feed/" class="social-button">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </div>
+    <script src="./main.js"></script>
   </body>
 </html>
