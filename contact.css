@@ -9,7 +9,7 @@
 #contact {
   padding-top: 1.5rem;
   background-color: rgba(255, 255, 255, 0.836);
-  animation: fadeIn 2s;
+  animation: fadeIn 2s ease-in-out;
 }
 html {
   font-size: calc(60% + 0.8vmin);
@@ -216,5 +216,13 @@ h2 {
   }
   .container {
     padding: 7rem 20rem;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
