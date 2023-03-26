@@ -26,10 +26,6 @@ body {
   --p-font: 1rem;
 }
 
-*::selection {
-  background: var (--main-color);
-}
-
 .logo {
   width: 4.5rem;
 }
@@ -83,7 +79,7 @@ header {
   font-size: 2rem;
   cursor: pointer;
   color: rgb(0, 0, 0);
-  display: hidden;
+  display: n;
 }
 
 .dropdown-content {
@@ -95,7 +91,7 @@ header {
   z-index: 1;
   font-size: 1.2rem;
   line-height: 2rem;
-  padding: 10px px;
+  padding: 10px;
 }
 
 .dropdown:hover .dropdown-content {
